@@ -1,13 +1,29 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import logo from "../../assets/logo/moon-logo.svg";
 import "./header.scss";
 
 function Header() {
+  const location = useLocation();
+  const [style, setStyle] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    if (location.pathname !== "/") setStyle(true);
+    else setStyle(false);
+  }, [location]);
+
   return (
     <>
-      <header id="header">
+      <header
+        id="header"
+        style={{ background: style ? "#f6f5f4" : "transparent" }}
+      >
         <nav className="navigate">
-          <img className="navigate-logo" src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="moon logo" className="navigate-logo" />
+          </Link>
           <ul className="navigate-direction">
             <NavLink
               to="/where-to-buy"

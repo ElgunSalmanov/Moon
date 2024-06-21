@@ -36,7 +36,10 @@
       justify-content: center;
       align-items: center;
       gap: 10px 0;
+      border: none;
+      background: transparent;
       color: #fff;
+      cursor: pointer;
 
       &:hover {
         .first-back-up {

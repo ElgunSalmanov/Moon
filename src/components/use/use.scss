@@ -1,0 +1,32 @@
+.use {
+  display: flex;
+  flex-direction: column;
+  font-family: "Graphik web", sans-serif;
+  gap: 10px 0;
+  padding: 50px 100px 100px 100px;
+
+  &-title {
+    color: #ff8a76;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+
+    &-title {
+      font-weight: 700;
+      color: #848484;
+    }
+
+    &-content {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 15px;
+      color: #848484;
+
+      &-title {
+        font-weight: 700;
+      }
+    }
+  }
+}

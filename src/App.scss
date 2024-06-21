@@ -3,7 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans";
-  // background: #d3d3d3;
   text-decoration: none;
   list-style-type: none;
+}
+
+// Body
+body {
+  background-color: #f6f5f4;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 0;
 }

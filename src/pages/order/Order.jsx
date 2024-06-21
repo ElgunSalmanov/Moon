@@ -1,5 +1,11 @@
+import Shop from "../../components/shop/Shop";
+
 function Order() {
-  return <div>Order</div>;
+  return (
+    <>
+      <Shop />
+    </>
+  );
 }
 
 export default Order;

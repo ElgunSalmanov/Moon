@@ -10,6 +10,13 @@ import youtube from "../../assets/icon/youtube.svg";
 import "./footer.scss";
 
 function Footer() {
+  const handleTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <footer id="footer">
@@ -18,10 +25,10 @@ function Footer() {
             Get in Touch{" "}
             <img className="first-get-right" src={right} alt="right arrow" />
           </Link>
-          <Link to="/" className="first-back">
+          <button onClick={handleTop} className="first-back">
             Back to Top{" "}
             <img className="first-back-up" src={up} alt="up arrow" />
-          </Link>
+          </button>
           <ul className="first-social">
             <Link
               to="https://www.instagram.com/mymoonultra/"
@@ -73,7 +80,7 @@ function Footer() {
             <Link to="/shop" className="second-directions-link">
               Pre-Order Now
             </Link>
-            <Link to="/buy" className="second-directions-link">
+            <Link to="/where-to-buy" className="second-directions-link">
               Where to Buy
             </Link>
           </ul>

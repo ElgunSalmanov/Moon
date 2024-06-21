@@ -1,6 +1,5 @@
 import { BrowserRouter, useRoutes } from "react-router-dom";
 import Layout from "./layout/Layout";
-import Buy from "./pages/buy/Buy";
 import Chat from "./pages/chat/Chat";
 import Contact from "./pages/contact/Contact";
 import Distributors from "./pages/distributors/Distributors";
@@ -39,10 +38,6 @@ function Routing() {
           element: <Order />,
         },
         {
-          path: "/buy",
-          element: <Buy />,
-        },
-        {
           path: "/terms-of-use",
           element: <Terms />,
         },
@@ -67,7 +62,7 @@ function Routing() {
           element: <Shipping />,
         },
         {
-          path: "chat",
+          path: "/chat",
           element: <Chat />,
         },
         {

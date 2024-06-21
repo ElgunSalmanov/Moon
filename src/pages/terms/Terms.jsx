@@ -1,5 +1,11 @@
+import Use from "../../components/use/Use";
+
 function Terms() {
-  return <div>Terms</div>;
+  return (
+    <>
+      <Use />
+    </>
+  );
 }
 
 export default Terms;
