@@ -1,5 +1,11 @@
+import Return from "../../components/return/Return";
+
 function Returns() {
-  return <div>Returns</div>;
+  return (
+    <>
+      <Return />
+    </>
+  );
 }
 
 export default Returns;

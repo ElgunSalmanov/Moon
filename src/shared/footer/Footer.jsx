@@ -110,7 +110,7 @@ function Footer() {
           </ul>
           <ul className="second-directions">
             <li className="second-directions-title">Contact us</li>
-            <Link to="/" className="second-directions-link">
+            <Link to="/chat" className="second-directions-link">
               Live Chat
             </Link>
             <Link

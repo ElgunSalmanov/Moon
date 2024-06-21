@@ -1,5 +1,11 @@
+import Live from "../../components/live/Live";
+
 function Chat() {
-  return <div>Chat</div>;
+  return (
+    <>
+      <Live />
+    </>
+  );
 }
 
 export default Chat;

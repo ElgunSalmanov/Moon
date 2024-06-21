@@ -1,5 +1,11 @@
+import Distributor from "../../components/distributor/Distributor";
+
 function Distributors() {
-  return <div>Distributors</div>;
+  return (
+    <>
+      <Distributor />
+    </>
+  );
 }
 
 export default Distributors;

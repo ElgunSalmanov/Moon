@@ -1,0 +1,36 @@
+.policy {
+  display: flex;
+  flex-direction: column;
+  font-family: "Graphik web", sans-serif;
+  padding: 50px 100px 100px 100px;
+  gap: 25px 0;
+  color: #848484;
+
+  &-title {
+    color: #ff8a76;
+  }
+
+  &-date {
+    font-size: 12px;
+  }
+
+  &-caption {
+    color: #848484;
+  }
+
+  &-list {
+    margin-left: 15px;
+
+    &-item {
+      list-style-type: disc;
+    }
+  }
+
+  &-content {
+    font-family: "Nunito Sans", sans-serif;
+    color: #848484;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 300;
+  }
+}

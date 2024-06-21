@@ -1,5 +1,11 @@
+import Policy from "../../components/policy/Policy";
+
 function Privacy() {
-  return <div>Privacy</div>;
+  return (
+    <>
+      <Policy />
+    </>
+  );
 }
 
 export default Privacy;

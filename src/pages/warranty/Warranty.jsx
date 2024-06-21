@@ -1,5 +1,11 @@
+import Limited from "../../components/limited/Limited";
+
 function Warranty() {
-  return <div>Warranty</div>;
+  return (
+    <>
+      <Limited />
+    </>
+  );
 }
 
 export default Warranty;

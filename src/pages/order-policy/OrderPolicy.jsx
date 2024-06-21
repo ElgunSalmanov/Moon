@@ -1,5 +1,11 @@
+import Pre from "../../components/pre/Pre";
+
 function OrderPolicy() {
-  return <div>OrderPolicy</div>;
+  return (
+    <>
+      <Pre />
+    </>
+  );
 }
 
 export default OrderPolicy;

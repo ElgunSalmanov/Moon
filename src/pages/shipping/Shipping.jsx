@@ -1,5 +1,11 @@
+import Carriage from "../../components/carriage/Carriage";
+
 function Shipping() {
-  return <div>Shipping</div>;
+  return (
+    <>
+      <Carriage />
+    </>
+  );
 }
 
 export default Shipping;
