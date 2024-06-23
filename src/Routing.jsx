@@ -30,6 +30,10 @@ function Routing() {
           element: <Locations />,
         },
         {
+          path: "/login",
+          element: <Login />,
+        },
+        {
           path: "/shop",
           element: <Order />,
         },
@@ -66,10 +70,6 @@ function Routing() {
           element: <Distributors />,
         },
       ],
-    },
-    {
-      path: "/login",
-      element: <Login />,
     },
     {
       path: "/contact",

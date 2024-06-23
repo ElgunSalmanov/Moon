@@ -1,5 +1,11 @@
+import HitUs from "../../components/hit-us/HitUs";
+
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <>
+      <HitUs />
+    </>
+  );
 }
 
 export default Contact;
