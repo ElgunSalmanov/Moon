@@ -3,10 +3,11 @@
   flex-direction: column;
   font-family: "Graphik web", sans-serif;
   gap: 10px 0;
-  padding: 50px 100px 100px 100px;
+  padding: 100px;
 
   &-title {
     color: #ff8a76;
+    padding-top: 50px;
   }
 
   &-container {

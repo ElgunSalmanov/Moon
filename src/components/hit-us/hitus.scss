@@ -1,13 +1,9 @@
-// Import styles
-@import "../../styles/_animations.scss";
-
 .hitus {
   width: 100%;
   height: 100vh;
   min-height: 600px;
   color: #fff;
   background: #cf614e;
-  animation: topping 1s ease-in-out;
 
   &-head {
     padding: 55px;
@@ -77,6 +73,8 @@
           gap: 0 10px;
 
           &-link {
+            transition: 0.3s ease-in-out;
+
             &:hover {
               transform: translateY(-5px);
             }
@@ -93,6 +91,7 @@
       width: 50%;
       display: flex;
       flex-direction: column;
+      position: relative;
       gap: 15px 0;
 
       &-container {
@@ -134,8 +133,8 @@
         border-radius: 10px;
         cursor: pointer;
         transition: 0.5s ease-in-out;
-        right: 15.5%;
-        top: 70%;
+        right: 0;
+        top: 100%;
       }
     }
   }

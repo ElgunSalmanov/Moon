@@ -4,13 +4,14 @@
   align-items: center;
   justify-content: center;
   gap: 20px 0;
-  padding: 50px 0 100px 0;
+  padding: 100px 0;
   color: #848484;
 
   &-title {
     font-size: 80px;
     text-transform: uppercase;
     text-shadow: 0 0 10px #848484;
+    padding-top: 50px;
 
     &-text {
       color: #ff8a76;

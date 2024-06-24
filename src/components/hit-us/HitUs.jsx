@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import chat from "../../assets/icon/chat.svg";
 import mail from "../../assets/icon/mail.svg";
@@ -21,8 +21,9 @@ function HitUs() {
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [messageError, setMessageError] = useState("");
-  const [success, setSuccess] = useState("");
+  const [open, setOpen] = useState(true);
   const [disabled, setDisabled] = useState(true);
+  const navigate = useNavigate();
 
   const validateName = (name) => {
     if (!/^[A-Za-z\s]*$/.test(name.target.value) && name.target.value !== "") {
@@ -73,6 +74,13 @@ function HitUs() {
     setMessage(message.target.value);
   };
 
+  const handleClose = () => {
+    setOpen(!open);
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
+  };
+
   useEffect(() => {
     if (
       name === "" ||
@@ -101,11 +109,21 @@ function HitUs() {
 
   return (
     <>
-      <div className="hitus">
+      <div
+        className="hitus"
+        style={
+          open
+            ? { animation: "topping 1s ease-in-out" }
+            : { animation: "bottoming 1s ease-in-out" }
+        }
+      >
         <div className="hitus-head">
-          <Link to="/">
-            <img className="hitus-head-close" src={close} alt="close" />
-          </Link>
+          <img
+            className="hitus-head-close"
+            onClick={handleClose}
+            src={close}
+            alt="close"
+          />
         </div>
         <div className="hitus-main">
           <div className="hitus-main-social">
