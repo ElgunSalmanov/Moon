@@ -76,6 +76,7 @@ function HitUs() {
 
   const handleClose = () => {
     setOpen(!open);
+
     setTimeout(() => {
       navigate("/");
     }, 1000);

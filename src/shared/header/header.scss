@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: fade-down 1s ease-in-out;
 
     &-logo {
       width: 100%;

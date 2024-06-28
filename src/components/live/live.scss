@@ -12,6 +12,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 10px #848484;
     padding-top: 50px;
+    animation: fade-up 1s ease-in-out;
 
     &-text {
       color: #ff8a76;
@@ -21,6 +22,7 @@
 
   &-text {
     font-size: 20px;
+    animation: fade-up 1s ease-in-out;
 
     &-link {
       color: #ff8a76;

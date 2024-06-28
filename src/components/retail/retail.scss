@@ -9,6 +9,7 @@
   &-title {
     padding-top: 50px;
     color: #848484;
+    animation: fade-up 1s ease-in-out;
 
     &-text {
       color: #ff8a76;
@@ -18,12 +19,14 @@
   &-content {
     font-size: 25px;
     font-weight: 900;
+    animation: fade-up 1s ease-in-out;
   }
 
   &-containers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px 0;
+    animation: fade-up 1s ease-in-out;
 
     &-container {
       display: flex;

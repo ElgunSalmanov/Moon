@@ -33,12 +33,14 @@
         font-size: 80px;
         font-family: "Graphik-web", sans-serif;
         color: #ff896c;
+        animation: fade-right 1s ease-in-out;
       }
 
       &-list {
         display: flex;
         flex-direction: column;
         gap: 20px 0;
+        animation: fade-up 1s ease-in-out;
 
         &-item {
           display: flex;
@@ -67,6 +69,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px 0;
+        animation: fade-up 1s ease-in-out;
 
         &-list {
           display: flex;
@@ -93,6 +96,7 @@
       flex-direction: column;
       position: relative;
       gap: 15px 0;
+      animation: fade-left 1s ease-in-out;
 
       &-container {
         display: flex;

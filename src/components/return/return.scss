@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 25px 0;
   padding: 100px;
+  animation: fade-up 1s ease-in-out;
 
   &-title {
     color: #ff8a76;

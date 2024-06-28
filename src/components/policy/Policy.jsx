@@ -25,7 +25,6 @@ function Policy() {
             for the on-going operation of one of our services.
           </li>
         </ul>
-
         <h3 className="policy-caption">Website Visitors</h3>
         <p className="policy-content">
           Like most website operators, Moon collects non-personally-identifying

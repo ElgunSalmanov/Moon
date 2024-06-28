@@ -1,62 +1,132 @@
-// Import styles
-@import "../../styles/_animations.scss";
-
-.main {
+.home {
+  position: relative;
+  overflow: visible;
   width: 100%;
-  height: 100vh;
-  background: rgb(211, 211, 211);
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
 
-  &-container {
+  z-index: 1;
+
+  &-inner {
+    position: relative;
     width: 100%;
     height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
-    &-contain {
-      width: 80%;
+.bg {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 400vh;
+
+  &-sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+
+    &-parent {
+      width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
 
-      &-background {
+      &-text {
+        position: sticky;
+        left: auto;
+        top: 0%;
+        right: auto;
+        bottom: auto;
+        z-index: 1;
+        display: flex;
         width: 100%;
-        height: 100%;
-        opacity: 0.2;
-        filter: blur(5px);
-      }
+        height: 100vh;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
 
-      &-ultralight {
-        width: 350px;
-        position: absolute;
+        &-c50 {
+          position: relative;
+          width: 52%;
+
+          h1 {
+            font-family: "Graphik web", sans-serif;
+            color: #ff8a76;
+            font-size: 3.5vw;
+            line-height: 120%;
+            font-weight: 500;
+            text-align: center;
+          }
+
+          p {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+          }
+        }
       }
 
       &-content {
         position: absolute;
-        font-size: 13px;
-        font-family: "Graphik web", sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        bottom: 40px;
-        color: #848484;
-        animation: opacity-infinite 1s ease-in-out infinite;
-      }
-    }
+        left: 0%;
+        top: 0%;
+        right: auto;
+        bottom: auto;
+        z-index: 0;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
 
-    &-info {
-      width: 100%;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
+        &-images-imgOne {
+          position: absolute;
+          display: flex;
+          overflow: hidden;
+          width: 65%;
+          padding: 10px;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
 
-      &.sticky {
-        // Define styles for sticky state
-        background-color: white; // Example change background color
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Example add shadow
+          img {
+            opacity: 0.2;
+            filter: blur(3px);
+          }
+        }
       }
     }
   }
