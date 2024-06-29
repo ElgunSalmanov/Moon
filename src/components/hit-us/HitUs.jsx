@@ -156,7 +156,7 @@ function HitUs() {
                 />
                 <Link
                   to="mailto:support@moonselfie.me?subject=Support%20Email%20Query%20"
-                  className="hitus-main-social-list-item-link"
+                  className="hitus-main-social-list-item-link pad-top"
                 >
                   support@moonselfie.me
                 </Link>

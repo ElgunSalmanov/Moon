@@ -1,3 +1,7 @@
+// Import styles
+@import "../../styles/_animations.scss";
+@import "../../styles/_mixins.scss";
+
 .hitus {
   width: 100%;
   height: 100vh;
@@ -8,6 +12,10 @@
   &-head {
     padding: 55px;
     text-align: end;
+
+    @include mobile {
+      padding: 25px;
+    }
 
     &-close {
       width: 20px;
@@ -24,16 +32,31 @@
     align-items: center;
     padding: 20px 30px;
 
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+      gap: 45px 0;
+    }
+
     &-social {
       display: flex;
       flex-direction: column;
       gap: 40px 0;
+
+      @include mobile {
+        width: 100%;
+      }
 
       &-title {
         font-size: 80px;
         font-family: "Graphik-web", sans-serif;
         color: #ff896c;
         animation: fade-right 1s ease-in-out;
+
+        @include mobile {
+          font-size: 50px;
+        }
       }
 
       &-list {
@@ -41,6 +64,13 @@
         flex-direction: column;
         gap: 20px 0;
         animation: fade-up 1s ease-in-out;
+
+        @include mobile {
+          width: 100%;
+          flex-direction: row;
+          align-items: center;
+          gap: 0 20px;
+        }
 
         &-item {
           display: flex;
@@ -60,6 +90,9 @@
 
             &:hover {
               filter: blur(1px);
+            }
+
+            @include mobile {
             }
           }
         }
@@ -97,6 +130,10 @@
       position: relative;
       gap: 15px 0;
       animation: fade-left 1s ease-in-out;
+
+      @include mobile {
+        width: 100%;
+      }
 
       &-container {
         display: flex;
@@ -147,4 +184,9 @@
 // Textarea resize none
 textarea {
   resize: none;
+}
+
+// Text padding top
+.pad-top {
+  padding-top: 4px;
 }

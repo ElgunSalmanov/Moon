@@ -1,3 +1,7 @@
+// Import styles
+@import "../../styles/_animations.scss";
+@import "../../styles/_mixins.scss";
+
 .limited {
   display: flex;
   flex-direction: column;
@@ -7,9 +11,25 @@
   color: #848484;
   animation: fade-up 1s ease-in-out;
 
+  @include mobile {
+    padding: 40px 25px 100px 25px;
+  }
+
   &-title {
     color: #ff8a76;
     padding-top: 50px;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  &-caption {
+    color: #848484;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
   &-list {
@@ -28,6 +48,10 @@
     font-size: 15px;
     line-height: 23px;
     font-weight: 300;
+
+    @include mobile {
+      font-size: 13px;
+    }
 
     &-title {
       font-weight: bold;

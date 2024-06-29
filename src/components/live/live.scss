@@ -1,3 +1,7 @@
+// Import styles
+@import "../../styles/_animations.scss";
+@import "../../styles/_mixins.scss";
+
 .live {
   display: flex;
   flex-direction: column;
@@ -14,6 +18,10 @@
     padding-top: 50px;
     animation: fade-up 1s ease-in-out;
 
+    @include mobile {
+      font-size: 50px;
+    }
+
     &-text {
       color: #ff8a76;
       text-shadow: 0 0 10px #ff8a76;
@@ -23,6 +31,10 @@
   &-text {
     font-size: 20px;
     animation: fade-up 1s ease-in-out;
+
+    @include mobile {
+      font-size: 16px;
+    }
 
     &-link {
       color: #ff8a76;

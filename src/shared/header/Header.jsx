@@ -1,11 +1,20 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo/moon-logo.svg";
+import menu from "../../assets/icon/menu.svg";
 import "./header.scss";
 
 function Header() {
   const location = useLocation();
   const [style, setStyle] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = () => {
+    setMenuOpen(!menuOpen);
+
+    if (menuOpen) document.body.style.overflow = "auto";
+    else document.body.style.overflow = "hidden";
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,13 +27,22 @@ function Header() {
     <>
       <header
         id="header"
-        style={{ background: style ? "#f6f5f4" : "transparent" }}
+        style={{
+          background: style ? "#f6f5f4" : "transparent",
+        }}
       >
         <nav className="navigate">
           <Link to="/">
             <img src={logo} alt="moon logo" className="navigate-logo" />
           </Link>
-          <ul className="navigate-direction">
+          <ul
+            className="navigate-direction"
+            onClick={handleMenu}
+            style={{
+              top: menuOpen ? "7%" : "-10%",
+              opacity: menuOpen ? 1 : 0,
+            }}
+          >
             <NavLink
               to="/where-to-buy"
               className={({ isActive }) =>
@@ -49,6 +67,12 @@ function Header() {
               <p className="navigate-direction-connect-inner"></p>
             </Link>
           </ul>
+          <img
+            src={menu}
+            alt="menu"
+            className="navigate-menu"
+            onClick={handleMenu}
+          />
         </nav>
       </header>
     </>

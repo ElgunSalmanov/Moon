@@ -16,3 +16,9 @@ body {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+// Clicked link and button backround transparent
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

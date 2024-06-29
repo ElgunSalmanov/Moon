@@ -1,3 +1,6 @@
+// Import styles
+@import "../../styles/_mixins.scss";
+
 .feature {
   display: flex;
   gap: 0 15px;
@@ -21,6 +24,10 @@
       width: 80%;
       font-size: 15px;
       color: #848484;
+
+      @include mobile {
+        width: 100%;
+      }
     }
   }
 }
