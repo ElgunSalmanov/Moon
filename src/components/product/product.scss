@@ -1,3 +1,7 @@
+// Import styles
+@import "../../styles/_mixins.scss";
+@import "../../styles/_media.scss";
+
 .card {
   display: flex;
   flex-direction: column;
@@ -10,5 +14,9 @@
 
   &-title {
     font-size: 16px;
+
+    @include mobile {
+      font-size: 16px !important;
+    }
   }
 }

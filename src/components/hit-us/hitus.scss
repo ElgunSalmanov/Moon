@@ -1,6 +1,7 @@
 // Import styles
 @import "../../styles/_animations.scss";
 @import "../../styles/_mixins.scss";
+@import "../../styles/_media.scss";
 
 .hitus {
   width: 100%;
@@ -14,7 +15,7 @@
     text-align: end;
 
     @include mobile {
-      padding: 25px;
+      padding: 25px !important;
     }
 
     &-close {
@@ -37,6 +38,7 @@
       flex-direction: column;
       align-items: start;
       gap: 45px 0;
+      padding: 20px 30px !important;
     }
 
     &-social {

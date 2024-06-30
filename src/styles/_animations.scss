@@ -98,11 +98,9 @@
 // For top to down animation
 @keyframes fade-down {
   0% {
-    transform: translateY(-10px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
     opacity: 1;
   }
 }

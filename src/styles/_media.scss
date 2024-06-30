@@ -1,0 +1,114 @@
+@media (max-width: 768px) {
+  #footer .second {
+    flex-direction: column;
+    gap: 30px 0 !important;
+    padding: 80px 25px 0 44px !important;
+  }
+
+  .retail {
+    width: 100%;
+    padding: 65px 0 100px 50px;
+  }
+
+  .hitus-main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hitus-head {
+    padding: 100px;
+  }
+
+  .hitus-main-social-title {
+    font-size: 50px !important;
+  }
+
+  .contain {
+    padding: 70px 25px 100px 25px !important;
+    gap: 0 50px;
+  }
+
+  .contain-login {
+    width: 45% !important;
+  }
+
+  .contain-login-title {
+    font-size: 35px !important;
+  }
+
+  .contain-register {
+    width: 45% !important;
+  }
+
+  .contain-register-title {
+    font-size: 35px !important;
+    margin: 0 0 10px 0 !important;
+  }
+
+  .product {
+    width: 100%;
+    padding: 100px 50px;
+    gap: 0 !important;
+  }
+
+  .features {
+    width: 90%;
+  }
+
+  .features-image {
+    display: none;
+  }
+
+  .difference {
+    padding: 50px !important;
+  }
+
+  .difference-container {
+    width: 100%;
+    gap: 0 40px;
+  }
+
+  .specs {
+    padding: 50px !important;
+  }
+
+  .included {
+    padding: 50px !important;
+  }
+
+  .card-image {
+    width: 100% !important;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .use {
+    padding: 65px 50px 100px 50px;
+  }
+
+  .policy {
+    padding: 65px 50px 100px 50px;
+  }
+
+  .limited {
+    padding: 65px 50px 100px 50px;
+  }
+
+  .pre {
+    padding: 65px 50px 100px 50px;
+  }
+
+  .return {
+    padding: 65px 50px 100px 50px;
+  }
+
+  .carriage {
+    padding: 65px 50px 100px 50px;
+  }
+
+  .distributor {
+    padding: 65px 50px 100px 50px;
+  }
+}

@@ -1,6 +1,7 @@
 // Import styles
 @import "../../styles/_animations.scss";
 @import "../../styles/_mixins.scss";
+@import "../../styles/_media.scss";
 
 .contain {
   display: flex;
@@ -11,7 +12,7 @@
 
   @include mobile {
     flex-direction: column;
-    padding: 40px 25px 100px 25px;
+    padding: 40px 25px 100px 25px !important;
   }
 
   &-login {
@@ -23,7 +24,7 @@
     animation: fade-up 1s ease-in-out;
 
     @include mobile {
-      width: 100%;
+      width: 100% !important;
     }
 
     &-title {
@@ -32,7 +33,7 @@
       color: #ff8a76;
 
       @include mobile {
-        font-size: 30px;
+        font-size: 30px !important;
       }
     }
 
@@ -70,7 +71,7 @@
       transition: 0.3s ease-in-out;
 
       @include mobile {
-        width: 100%;
+        width: 100% !important;
       }
 
       &:hover {
@@ -94,7 +95,7 @@
       transition: 0.3s ease-in-out;
 
       @include mobile {
-        width: 100%;
+        width: 100% !important;
       }
 
       &:hover {
@@ -130,7 +131,7 @@
     animation: fade-up 1.5s ease-in-out;
 
     @include mobile {
-      width: 100%;
+      width: 100% !important;
     }
 
     &-title {
@@ -139,7 +140,7 @@
       color: #ff8a76;
 
       @include mobile {
-        font-size: 30px;
+        font-size: 30px !important;
       }
     }
 
@@ -171,7 +172,7 @@
       transition: 0.3s ease-in-out;
 
       @include mobile {
-        width: 100%;
+        width: 100% !important;
       }
 
       &:hover {

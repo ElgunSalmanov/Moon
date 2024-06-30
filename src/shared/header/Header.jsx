@@ -11,9 +11,6 @@ function Header() {
 
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
-
-    if (menuOpen) document.body.style.overflow = "auto";
-    else document.body.style.overflow = "hidden";
   };
 
   useEffect(() => {
@@ -40,7 +37,6 @@ function Header() {
             onClick={handleMenu}
             style={{
               top: menuOpen ? "7%" : "-10%",
-              opacity: menuOpen ? 1 : 0,
             }}
           >
             <NavLink
