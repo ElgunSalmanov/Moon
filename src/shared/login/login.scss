@@ -1,0 +1,183 @@
+// Import styles
+@import "../../styles/_animations.scss";
+@import "../../styles/_mixins.scss";
+@import "../../styles/_media.scss";
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 100px;
+  padding: 100px;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 40px 25px 100px 25px !important;
+  }
+
+  &-login {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    padding-top: 80px;
+    animation: fade-up 1s ease-in-out;
+
+    @include mobile {
+      width: 100% !important;
+    }
+
+    &-title {
+      margin: 0 0 30px 0;
+      font-size: 40px;
+      color: #ff8a76;
+
+      @include mobile {
+        font-size: 30px !important;
+      }
+    }
+
+    &-container {
+      display: flex;
+      border-bottom: 1px solid #000;
+
+      &-label {
+        font-size: 14px;
+      }
+
+      &-entry {
+        width: 100%;
+        text-indent: 20px;
+        border: none;
+        background: transparent;
+        outline: none;
+      }
+    }
+
+    &-forgot {
+      font-size: 15px;
+      color: #be5a49;
+      cursor: pointer;
+    }
+
+    &-sign {
+      width: 150px;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      @include mobile {
+        width: 100% !important;
+      }
+
+      &:hover {
+        filter: blur(1px);
+      }
+    }
+
+    &-content {
+      font-size: 14px;
+      color: #333;
+    }
+
+    &-facebook {
+      width: 150px;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #2e6596;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      @include mobile {
+        width: 100% !important;
+      }
+
+      &:hover {
+        filter: blur(1px);
+      }
+    }
+  }
+
+  &-or-line {
+    width: 1px;
+    height: 350px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    @include mobile {
+      display: none;
+    }
+
+    &-text {
+      background: #f6f5f4;
+    }
+  }
+
+  &-register {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding-top: 80px;
+    animation: fade-up 1.5s ease-in-out;
+
+    @include mobile {
+      width: 100% !important;
+    }
+
+    &-title {
+      margin: 0 0 35px 0;
+      font-size: 40px;
+      color: #ff8a76;
+
+      @include mobile {
+        font-size: 30px !important;
+      }
+    }
+
+    &-container {
+      display: flex;
+      border-bottom: 1px solid #000;
+
+      &-label {
+        font-size: 14px;
+      }
+
+      &-entry {
+        width: 80%;
+        text-indent: 20px;
+        border: none;
+        background: transparent;
+        outline: none;
+      }
+    }
+
+    &-create {
+      width: 150px;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      @include mobile {
+        width: 100% !important;
+      }
+
+      &:hover {
+        filter: blur(1px);
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// Import styles
+@import "../../styles/_animations.scss";
+
+.loading {
+  width: 100%;
+  height: 100vh;
+
+  &-high {
+    width: 100%;
+    height: 45vh;
+    background: #be5a49;
+    animation: loading-bottoming 1s ease-in-out;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #be5a49;
+    animation: loading-opacity 1s ease-in-out;
+
+    &-image {
+      width: 100px;
+      height: 10vh;
+    }
+  }
+
+  &-down {
+    width: 100%;
+    height: 45vh;
+    background: #be5a49;
+    animation: loading-topping 1s ease-in-out;
+  }
+}

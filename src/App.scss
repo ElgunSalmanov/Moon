@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans";
+  text-decoration: none;
+  list-style-type: none;
+}
+
+// Body
+body {
+  background-color: #f6f5f4;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 0;
+}
+
+// Clicked link and button backround transparent
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

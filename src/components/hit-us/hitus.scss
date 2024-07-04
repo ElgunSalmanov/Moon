@@ -1,0 +1,194 @@
+// Import styles
+@import "../../styles/_animations.scss";
+@import "../../styles/_mixins.scss";
+@import "../../styles/_media.scss";
+
+.hitus {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  background: #cf614e;
+
+  &-head {
+    padding: 55px;
+    text-align: end;
+
+    @include mobile {
+      padding: 25px !important;
+    }
+
+    &-close {
+      width: 20px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  &-main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+      gap: 45px 0;
+      padding: 20px 30px !important;
+    }
+
+    &-social {
+      display: flex;
+      flex-direction: column;
+      gap: 40px 0;
+
+      @include mobile {
+        width: 100%;
+      }
+
+      &-title {
+        font-size: 80px;
+        font-family: "Graphik-web", sans-serif;
+        color: #ff896c;
+        animation: fade-right 1s ease-in-out;
+
+        @include mobile {
+          font-size: 50px;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+        animation: fade-up 1s ease-in-out;
+
+        @include mobile {
+          width: 100%;
+          flex-direction: row;
+          align-items: center;
+          gap: 0 20px;
+        }
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px 0;
+
+          &-image {
+            width: 20px;
+          }
+
+          &-link {
+            width: 55px;
+            font-size: 13px;
+            color: #cacaca;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              filter: blur(1px);
+            }
+
+            @include mobile {
+            }
+          }
+        }
+      }
+
+      &-navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 5px 0;
+        animation: fade-up 1s ease-in-out;
+
+        &-list {
+          display: flex;
+          gap: 0 10px;
+
+          &-link {
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+              transform: translateY(-5px);
+            }
+          }
+        }
+
+        &-content {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 15px 0;
+      animation: fade-left 1s ease-in-out;
+
+      @include mobile {
+        width: 100%;
+      }
+
+      &-container {
+        display: flex;
+        border-bottom: 1px solid #ff896c;
+
+        &-entry {
+          width: 80%;
+          text-indent: 20px;
+          border: none;
+          background: transparent;
+          outline: none;
+          color: #fff;
+
+          &-validations {
+            width: 100%;
+            height: 10px;
+            padding: 0 10px;
+
+            &-text {
+              font-size: 13px;
+              color: #fff;
+            }
+          }
+
+          &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px #cf614e inset;
+            -webkit-text-fill-color: #fff;
+          }
+        }
+      }
+
+      &-button {
+        width: 110px;
+        padding: 10px;
+        position: absolute;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        right: 0;
+        top: 100%;
+      }
+    }
+  }
+}
+
+// Textarea resize none
+textarea {
+  resize: none;
+}
+
+// Text padding top
+.pad-top {
+  padding-top: 4px;
+}
